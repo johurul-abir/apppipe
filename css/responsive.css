@@ -1,0 +1,65 @@
+/*Media Query*/
+
+/*NoteBook Device*/
+@media (min-width: 768px) and (max-width: 990px){
+label.logo{font-size: 25px;}
+ul li a{font-size: 15px;}
+.checkbtn{font-size: 20px;margin-left: 100px;}
+.search{padding-top: 6px;}
+.form-control{height: 29px;font-size: 13px;text-align: center;padding-top: 8px;padding-left: 23px;}
+nav ul li{display: inline;line-height: 49px;margin-left: 10px;}
+nav ul {padding-right: 40px;}
+}
+
+@media  (max-width: 768px){
+.checkbtn{display: block;}
+.logo {font-size: 25px;padding: 0px;}
+nav ul{background:#fff;width: 100%;position: fixed;top: 50px;
+left: -100%;text-align: center;transition: .5s;}
+nav ul li{display: block;}
+a:hover,a.active{background: none;color: #eb2f06;}
+.active:hover{background:none;}
+#check:checked~ul{left: 0px}
+.checkbtn {margin-left: 35%;}
+.search{padding-top: 6px;}
+.form-control{height: 29px;font-size: 13px;text-align: center;padding-top: 8px;padding-left: 23px;}
+footer .fa {
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    line-height: 35px;
+    padding: 0;
+}
+}
+/*Tablet Device*/
+@media (max-width: 768px){
+.banner h1 {padding-top: 80px;}
+.banner img {width: 80vw;animation: float 3s linear infinite;}
+.review { padding: 50px 0px;}
+.pricing {padding: 10px 0px;background: #f7f7f7;}
+}
+
+
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 575px){
+.banner img { width: 80vw; margin-top: 30px;}
+.banner h1 {padding-top: 30px;font-size: 40px;font-weight: 800;text-align: center;
+padding-bottom:20px;}
+.banner h2 {font-size: 40px;text-align: center;}
+.banner p {padding: 30px;font-size: 16px;}
+button {display: block;margin: 0 auto;}
+.apps-feature {padding:0px;}
+.about h2 {padding-bottom: 30px;}
+.about img {width: 80%;padding-bottom: 30px;}
+.about h3, p{padding-left: 0px!important; text-align: center;}
+.about button {margin: 20px auto;}
+.subscribe {padding: 50px 0 70px  0px;}
+.review {padding: 50px 0px;}
+.pricing {padding: 10px 0px;  }
+footer {padding: 30px 0px;text-align: center;}
+}

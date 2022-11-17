@@ -1,0 +1,482 @@
+/*.....google-fonts...*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*.......google fonts......
+
+*/
+/*==========================
+GLOBAL CSS
+============================*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+	padding: 10px 28px;
+    background: linear-gradient(90deg, #814096, #f83292);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: 0.4s;
+
+}
+button:hover{
+	transform: scale(1.1);
+}
+
+/*==========================
+		NAV SECTION start
+============================*/
+nav{
+background: white;
+height: 60px;
+box-shadow: 5px 5px 5px #d5d5d5;
+margin: 0px;
+
+}
+.search{width: 100px;display: block;float: right;
+	margin-top: 5px;}
+ .checkbtn{
+   font-family: 'Poppins', sans-serif;
+	float: right;
+ 	font-size: 30px;
+ 	cursor: pointer;
+ 	line-height: 53px;
+ 	display: none;
+ 	margin-right: 20px;
+ }
+
+.logo{
+	font-size: 20px;
+	font-weight: 500;
+	color: #814096;
+	padding-left: 30px;
+	line-height: 50px;
+	float: left;
+
+}
+.logo span{
+	color:#f83292 ;
+}
+ nav ul{
+ 	float: right;
+ 	padding-right: 73px;
+ }
+ nav ul li{
+ 	display: inline;
+ 	line-height: 49px;
+    margin-left: 20px;
+ }
+ nav a{
+ 	font-size: 15px;
+ 	color: #814096;
+ 	letter-spacing: 1px;
+ 	padding: 2px 0px;
+ 	font-weight: 600;
+ 	transition: 0.3s;
+
+ }
+ nav a:hover{
+ 	color:#f83292;
+	transform: scale(1.1);
+ }
+
+nav .active{
+color:#F83292 ;
+}
+
+
+ #check{
+ 	display: none;
+
+ }
+ nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: +1000;
+}
+
+/*==========================
+	BANNER SECTION START
+============================*/
+
+
+.banner{
+	background-image: url(../img/home-bg-img.png) ;
+	background-size: cover;
+	padding: 50px 0px;
+	background-position: center;
+}
+
+.banner h1{
+	padding-top: 150px;
+  font-size: 55px;
+  font-weight: 600;
+}
+.banner h2{
+  font-size: 55px;
+  font-weight: 600;
+  color:  #f83292;
+}
+.banner p{
+   padding: 30px 0px;
+}
+
+
+.banner img{
+width: 40vw;
+animation: float 3s linear infinite;
+}
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+
+    50%{
+        transform: translateY(-3.5rem);
+    }
+    
+}
+
+/*==========================
+	apps-feature SECTION START
+============================*/
+.apps-feature{
+	background: #f9f9f9;
+	padding: 70px 0px;
+}
+.feature-row{
+	padding: 0px 30px;
+}
+.apps-feature h2{
+	font-size: 40px;
+	font-weight: 600;
+	color: #b13a94;
+	text-align: center;
+	padding: 30px 0px;
+}
+.apps-feature img{
+ 	width: auto;height: 150px;
+    display: block;
+    margin: auto;
+ 	height: 150px;
+    display: block;
+    margin: auto;
+}
+.apps-feature h3{
+text-align: center;
+padding: 20px 0px;
+
+}
+
+.apps-feature p{
+text-align: center;
+}
+.apps-feature button{
+	display: block;
+	margin: 0 auto;
+}
+
+.feature-box{
+	padding:20px;
+	background: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 5px;
+}
+.feature-box:hover{
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+	
+	
+/*==========================
+	ABOUT SECTION START
+============================*/
+.about{
+	background: url(../img/about-bg.png);
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0px;
+}
+.about h2{
+text-align: center;
+color: #814096;
+padding-bottom: 100px;
+}
+.about img{
+width: 100%;
+}
+.about p{
+padding: 10px 0px;
+}
+.about button{
+	margin: 10px;
+
+}
+
+/*==========================
+	SUBSCRIB SECTION START
+============================*/
+.subscribe{
+	background: url(../img/subscribe-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 100px 0px;
+
+}
+.subscribe h3{
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+.subscribe p{
+	color: white;
+	text-align: center;
+
+}
+.subscribe-button{
+	position: relative;
+}
+.subscribe input{
+	width: 100%;
+	padding-right: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 27px;
+    border: 2px solid white;
+    background: transparent;
+   	position: absolute;
+   	padding-left: 10px;
+
+}
+:focus{
+ 	outline: none;
+
+
+}
+::-webkit-input-placeholder{
+	color: white;
+
+}
+.subscribe button{
+	position: absolute;
+	padding: 8px 39px;
+    background: white;
+    font-weight: 600;
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    color: purple;
+}
+
+/*==========================
+	REVIEW SECTION START
+============================*/
+
+.review{
+	background: #f7f7f7;
+	padding: 100px 0px;
+
+}
+.review h2{
+	text-align: center;
+	color:#b33a94;
+	font-weight: 600;
+	padding-bottom: 10px;
+
+}
+.review h4{
+	font-weight: 600;
+	text-align: center;
+	color: #f83292;
+
+}
+.review img{
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+
+}
+.review ul{
+	text-align: center;
+    padding: 0px;
+}
+.review li{
+	display: inline-block;
+	text-align: center;
+
+}
+.review p{
+	font-size: 15px;
+	text-align: center;
+	padding: 15px;
+
+}
+.review .fa{
+	font-size: 20px;
+	color:#814096 ;
+}
+
+.review-box{
+	position: relative;
+	padding-top: 50px;
+    background: white;
+    box-shadow: 12px 14px 11px #efe8e8;
+    border-radius: 5px;
+}
+/*==========================
+	PRICING SECTION START
+============================*/
+.pricing{
+	padding: 100px 0px;
+	background: #f7f7f7;
+}
+
+.pricing h2{
+	font-weight: 600;
+	color: #b33a94 ;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.pricing-box{
+	padding: 40px 0px;
+	background: white;
+    box-shadow: 12px 14px 11px #efe8e8;
+    border-radius: 5px;
+}
+.pricing h4{
+	font-size: 30px;
+	font-weight: 600;
+	color: #814096;
+	text-align: center;
+
+}
+.pricing h5{
+	text-align: center;
+	color: #f83292;
+	font-size: 20px;
+	padding: 15px 0px;
+
+}
+.pricing span{
+	font-size: 41px;
+}
+.pricing ul{
+	text-align: center;
+	line-height: 35px;
+}
+
+.pricing li{
+	font-size: 20px;
+	color: #666;
+}
+.pricing .fa{
+	font-size: 20px;
+	color: #90ee90 ;
+    
+}
+.pricing button{
+	display: block;
+	margin: 0 auto;
+}
+
+/*==========================
+	CONTACT SECTION START
+============================*/
+.contact{
+	background: #f7f7f7;
+	padding: 50px 0px;
+}
+.contact img{
+	width: 100%;
+}
+.contact input{
+	width: 100%;
+	border: none;
+    background: #f7f7f7;
+    color: black;
+}
+.contact h2{
+	text-align: center;
+    font-weight: 600;
+    color: #f83292;;
+}
+.contact li{
+	margin-bottom: 25px;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.contact textarea{
+	width: 100%;
+	border: none;
+    background: #f7f7f7;
+    color: black;
+} 
+
+.contact label{
+	color: #f83292;;
+}
+.contact-us{
+	box-shadow: -7px 8px 8px #d5d5d5;
+    padding: 20px;
+}
+/*==========================
+	FOOTER SECTION START
+============================*/
+footer{
+	background: url(../img/footer-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0px;
+}
+
+footer h2{
+	color: white;
+	text-decoration: underline;
+	padding: 10px 0px;
+}
+footer p{
+	color: white;
+	padding-left: 64px;
+    line-height: 24px;
+}
+footer li a{
+	color: white;
+}
+footer ul{
+	padding: 0;
+}
+footer .fa{
+	font-size: 30px;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    line-height: 49px;
+	padding: 0;
+   
+}
+
+.divider{
+	background: white;
+	padding-top: 1px;
+}
